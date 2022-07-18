@@ -1,6 +1,7 @@
 from tkinter import Tk, Canvas
 from random import shuffle
 
+
 # Размер игрового поля (4x4)
 BOARD_SIZE = 4
 # Размер одного блока в пикселях
@@ -61,8 +62,6 @@ def get_empty_neighbor(index):
     return index
 
 
-
-
 def draw_board():
     # убираем все, что нарисовано на холсте
     c.delete('all')
@@ -115,7 +114,6 @@ def click(event):
     if board == correct_board:
         # выводить сообщение о победе
         show_victory_plate()
-
 
 
 # Привязываем обработчик событий к холсту
